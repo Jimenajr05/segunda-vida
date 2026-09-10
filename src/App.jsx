@@ -86,7 +86,7 @@ export default function App() {
     }
 
     setCart(prev => [...prev, product]);
-    showToast(`"${product.name}" agregada al carrito`);
+    showToast("Producto agregado al carrito");
   };
 
   const handleRemoveFromCart = (productId) => {
