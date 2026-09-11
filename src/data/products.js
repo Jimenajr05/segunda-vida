@@ -1153,7 +1153,7 @@ export const products = [
     "price": 7000,
     "image": "/images/products/guantes-gym/GUA-002.JPG",
     "available": true,
-    "description": "Guantes de gym de segunda mano en excelente estado."
+    "description": "Guantes de gym nuevos, sin uso."
   },
   {
     "id": 104,
