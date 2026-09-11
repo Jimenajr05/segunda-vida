@@ -96,6 +96,108 @@
   border-color: var(--border-focus);
 }
 
+/* Dashboard de control */
+.admin-dashboard {
+  margin-bottom: 20px;
+}
+
+.admin-money-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-money-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+}
+
+.admin-money-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-money-icon-sales {
+  background: #E7F5EC;
+  color: #1F8A4C;
+}
+
+.admin-money-icon-pending {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.admin-money-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.admin-money-value {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.admin-status-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.admin-status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 6px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  color: var(--text-muted);
+}
+
+.admin-status-card:active {
+  transform: scale(0.97);
+}
+
+.admin-status-card-count {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.admin-status-card-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.admin-status-card-disponible { color: #1F8A4C; }
+.admin-status-card-apartado { color: var(--accent-hover); }
+.admin-status-card-vendido { color: var(--color-sold); }
+
+.admin-status-card.is-active {
+  border-color: currentColor;
+  background: var(--bg-subtle);
+}
+
 .admin-count {
   font-size: 0.78rem;
   color: var(--text-muted);

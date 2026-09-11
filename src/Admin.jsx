@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Search, LogOut, Check, Loader2 } from 'lucide-react';
+import { Search, LogOut, Check, Loader2, Wallet, TrendingUp, Clock3, Tag } from 'lucide-react';
 import { supabase } from './utils/supabaseClient';
 import { withBase } from './utils/withBase';
+import { formatCurrency } from './utils/currency';
 import './admin.css';
 
 /**
@@ -108,10 +109,15 @@ function LoginForm() {
   );
 }
 
+function statusOf(product) {
+  return product.available ? 'disponible' : (product.status || 'vendido');
+}
+
 function ProductManager() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
+  const [statusFilter, setStatusFilter] = useState('todos');
   const [savingId, setSavingId] = useState(null);
   const [savedId, setSavedId] = useState(null);
 
@@ -127,13 +133,30 @@ function ProductManager() {
 
   useEffect(() => { load(); }, []);
 
+  // Estadísticas para el dashboard de control
+  const stats = useMemo(() => {
+    const result = {
+      disponible: { count: 0, total: 0 },
+      apartado: { count: 0, total: 0 },
+      vendido: { count: 0, total: 0 },
+    };
+    for (const p of products) {
+      const s = statusOf(p);
+      result[s].count += 1;
+      result[s].total += Number(p.price) || 0;
+    }
+    const porCobrar = result.disponible.total + result.apartado.total;
+    return { ...result, total: products.length, porCobrar };
+  }, [products]);
+
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    if (!q) return products;
-    return products.filter(
-      (p) => p.code.toLowerCase().includes(q) || p.name.toLowerCase().includes(q)
-    );
-  }, [products, search]);
+    return products.filter((p) => {
+      if (statusFilter !== 'todos' && statusOf(p) !== statusFilter) return false;
+      if (!q) return true;
+      return p.code.toLowerCase().includes(q) || p.name.toLowerCase().includes(q);
+    });
+  }, [products, search, statusFilter]);
 
   const updateLocal = (id, field, value) => {
     setProducts((prev) => prev.map((p) => (p.id === id ? { ...p, [field]: value } : p)));
@@ -159,6 +182,14 @@ function ProductManager() {
 
   return (
     <div>
+      {!loading && (
+        <Dashboard
+          stats={stats}
+          activeFilter={statusFilter}
+          onFilter={setStatusFilter}
+        />
+      )}
+
       <div className="admin-search-wrapper">
         <Search size={17} className="admin-search-icon" strokeWidth={2} />
         <input
@@ -191,8 +222,64 @@ function ProductManager() {
   );
 }
 
+function Dashboard({ stats, activeFilter, onFilter }) {
+  const toggle = (value) => onFilter(activeFilter === value ? 'todos' : value);
+
+  return (
+    <div className="admin-dashboard">
+      <div className="admin-money-cards">
+        <div className="admin-money-card">
+          <div className="admin-money-icon admin-money-icon-sales">
+            <TrendingUp size={17} strokeWidth={2.3} />
+          </div>
+          <div>
+            <p className="admin-money-label">Total vendido</p>
+            <p className="admin-money-value">{formatCurrency(stats.vendido.total)}</p>
+          </div>
+        </div>
+        <div className="admin-money-card">
+          <div className="admin-money-icon admin-money-icon-pending">
+            <Wallet size={17} strokeWidth={2.3} />
+          </div>
+          <div>
+            <p className="admin-money-label">Por cobrar</p>
+            <p className="admin-money-value">{formatCurrency(stats.porCobrar)}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="admin-status-cards">
+        <button
+          className={`admin-status-card admin-status-card-disponible ${activeFilter === 'disponible' ? 'is-active' : ''}`}
+          onClick={() => toggle('disponible')}
+        >
+          <Tag size={16} strokeWidth={2.3} />
+          <span className="admin-status-card-count">{stats.disponible.count}</span>
+          <span className="admin-status-card-label">Disponible</span>
+        </button>
+        <button
+          className={`admin-status-card admin-status-card-apartado ${activeFilter === 'apartado' ? 'is-active' : ''}`}
+          onClick={() => toggle('apartado')}
+        >
+          <Clock3 size={16} strokeWidth={2.3} />
+          <span className="admin-status-card-count">{stats.apartado.count}</span>
+          <span className="admin-status-card-label">Apartado</span>
+        </button>
+        <button
+          className={`admin-status-card admin-status-card-vendido ${activeFilter === 'vendido' ? 'is-active' : ''}`}
+          onClick={() => toggle('vendido')}
+        >
+          <Check size={16} strokeWidth={2.3} />
+          <span className="admin-status-card-count">{stats.vendido.count}</span>
+          <span className="admin-status-card-label">Vendido</span>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function ProductRow({ product, saving, saved, onChange, onSave }) {
-  const statusValue = product.available ? 'disponible' : (product.status || 'vendido');
+  const statusValue = statusOf(product);
 
   return (
     <div className="admin-row">
