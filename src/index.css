@@ -943,6 +943,30 @@ a {
   color: var(--text-light);
 }
 
+@media (max-width: 480px) {
+  .pagination-wrapper {
+    gap: 4px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 2px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pagination-btn {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 6px;
+    font-size: 0.78rem;
+    flex-shrink: 0;
+  }
+
+  .pagination-ellipsis {
+    min-width: 16px;
+    flex-shrink: 0;
+  }
+}
+
 /* ==========================================================================
    MODAL & DRAWER BASE STYLES
    ========================================================================== */
