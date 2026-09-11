@@ -124,7 +124,7 @@ export const products = [
   {
     "id": 11,
     "code": "BLU-009",
-    "name": "Top blanco de canalé con botones",
+    "name": "Top blanco con botones",
     "category": "Blusas",
     "size": "M",
     "price": 1500,
@@ -344,7 +344,7 @@ export const products = [
   {
     "id": 31,
     "code": "BLU-029",
-    "name": "Top manga larga lila de canalé con escote cruzado",
+    "name": "Top manga larga lila con escote cruzado",
     "category": "Blusas",
     "size": "M",
     "price": 2000,
@@ -355,7 +355,7 @@ export const products = [
   {
     "id": 32,
     "code": "BLU-030",
-    "name": "Top sin mangas fucsia de canalé cuello polo Abercrombie",
+    "name": "Top sin mangas fucsia cuello polo Abercrombie",
     "category": "Blusas",
     "size": "M",
     "price": 2000,
@@ -388,7 +388,7 @@ export const products = [
   {
     "id": 35,
     "code": "BLU-033",
-    "name": "Suéter gris de canalé con rayas en las mangas",
+    "name": "Suéter gris con rayas en las mangas",
     "category": "Blusas",
     "size": "S",
     "price": 1500,
@@ -443,7 +443,7 @@ export const products = [
   {
     "id": 41,
     "code": "BLU-038",
-    "name": "Crop top gris oscuro de canalé cuello V",
+    "name": "Crop top gris oscuro cuello V",
     "category": "Blusas",
     "size": "M",
     "price": 1500,
@@ -454,7 +454,7 @@ export const products = [
   {
     "id": 42,
     "code": "BLU-039",
-    "name": "Top sin mangas morado de canalé cuello alto",
+    "name": "Top sin mangas morado cuello alto",
     "category": "Blusas",
     "size": "M",
     "price": 500,
@@ -487,7 +487,7 @@ export const products = [
   {
     "id": 45,
     "code": "BLU-042",
-    "name": "Crop top verde lima de canalé con amarre",
+    "name": "Crop top verde lima con amarre",
     "category": "Blusas",
     "size": "M",
     "price": 3500,
@@ -509,7 +509,7 @@ export const products = [
   {
     "id": 47,
     "code": "BLU-044",
-    "name": "Crop top blanco de canalé con botones en los hombros",
+    "name": "Crop top blanco con botones en los hombros",
     "category": "Blusas",
     "size": "M",
     "price": 1500,
@@ -531,7 +531,7 @@ export const products = [
   {
     "id": 49,
     "code": "BLU-046",
-    "name": "Top celeste de canalé con tiritas ajustables",
+    "name": "Top celeste con tiritas ajustables",
     "category": "Blusas",
     "size": "S",
     "price": 500,
@@ -597,7 +597,7 @@ export const products = [
   {
     "id": 55,
     "code": "BLU-052",
-    "name": "Suéter blanco de canalé con frunce lateral",
+    "name": "Suéter blanco con frunce lateral",
     "category": "Blusas",
     "size": "L",
     "price": 3500,
@@ -608,7 +608,7 @@ export const products = [
   {
     "id": 56,
     "code": "BLU-053",
-    "name": "Top de tiritas de canalé",
+    "name": "Top de tiritas",
     "category": "Blusas",
     "size": "M",
     "price": 1500,
@@ -850,7 +850,7 @@ export const products = [
   {
     "id": 77,
     "code": "BOD-003",
-    "name": "Body sin mangas rosado palo de canalé con encaje",
+    "name": "Body sin mangas rosado palo con encaje",
     "category": "Bodies",
     "size": "S",
     "price": 3500,
@@ -861,7 +861,7 @@ export const products = [
   {
     "id": 78,
     "code": "BOD-004",
-    "name": "Body manga larga vino de canalé con escote cruzado",
+    "name": "Body manga larga vino con escote cruzado",
     "category": "Bodies",
     "size": "S",
     "price": 3500,
@@ -1873,7 +1873,7 @@ export const products = [
   {
     "id": 169,
     "code": "VES-004",
-    "name": "Vestido negro de canalé con pedrería y espalda con recortes",
+    "name": "Vestido negro con pedrería y espalda con recortes",
     "category": "Vestidos",
     "size": "S",
     "price": 4500,
@@ -1928,7 +1928,7 @@ export const products = [
   {
     "id": 174,
     "code": "VES-009",
-    "name": "Vestido gris de canalé con cierre frontal y argolla",
+    "name": "Vestido gris con cierre frontal y argolla",
     "category": "Vestidos",
     "size": "S",
     "price": 3500,
