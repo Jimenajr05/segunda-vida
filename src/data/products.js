@@ -511,7 +511,7 @@ export const products = [
     "code": "BLU-044",
     "name": "Crop top blanco con botones en los hombros",
     "category": "Blusas",
-    "size": "M",
+    "size": "S",
     "price": 1500,
     "image": "/images/products/blusas/BLU-044.JPG",
     "available": true,
