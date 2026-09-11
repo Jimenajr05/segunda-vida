@@ -116,7 +116,7 @@ export const products = [
     "name": "Camisa crop a rayas blanco y negro con nudo",
     "category": "Blusas",
     "size": "S",
-    "price": 2500,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-008.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -138,7 +138,7 @@ export const products = [
     "name": "Top de tiritas rojo con volados",
     "category": "Blusas",
     "size": "S",
-    "price": 2500,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-010.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -259,7 +259,7 @@ export const products = [
     "name": "Top fucsia con cuello drapeado metalizado",
     "category": "Blusas",
     "size": "S",
-    "price": 2000,
+    "price": 2500,
     "image": "/images/products/blusas/BLU-021.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -303,7 +303,7 @@ export const products = [
     "name": "Top de tiritas azul marino a lunares con peplum",
     "category": "Blusas",
     "size": "M",
-    "price": 2000,
+    "price": 3000,
     "image": "/images/products/blusas/BLU-025.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -314,7 +314,7 @@ export const products = [
     "name": "Blusa manga larga negra con banda blanca en la cintura",
     "category": "Blusas",
     "size": "S",
-    "price": 1500,
+    "price": 2000,
     "image": "/images/products/blusas/BLU-026.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -325,7 +325,7 @@ export const products = [
     "name": "Top sin mangas rojo con perlas en los hombros",
     "category": "Blusas",
     "size": "S",
-    "price": 2500,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-027.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -336,7 +336,7 @@ export const products = [
     "name": "Blusa fucsia sin mangas con vuelo y amarre",
     "category": "Blusas",
     "size": "S",
-    "price": 2500,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-028.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -347,7 +347,7 @@ export const products = [
     "name": "Top manga larga lila con escote cruzado",
     "category": "Blusas",
     "size": "M",
-    "price": 2000,
+    "price": 3000,
     "image": "/images/products/blusas/BLU-029.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -358,7 +358,7 @@ export const products = [
     "name": "Top sin mangas fucsia cuello polo Abercrombie",
     "category": "Blusas",
     "size": "M",
-    "price": 2000,
+    "price": 3000,
     "image": "/images/products/blusas/BLU-030.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -391,7 +391,7 @@ export const products = [
     "name": "Suéter gris con rayas en las mangas",
     "category": "Blusas",
     "size": "S",
-    "price": 1500,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-033.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -402,7 +402,7 @@ export const products = [
     "name": "Top manga larga gris jaspeado con frente cruzado",
     "category": "Blusas",
     "size": "S",
-    "price": 2000,
+    "price": 3500,
     "image": "/images/products/blusas/BLU-034.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -490,7 +490,7 @@ export const products = [
     "name": "Crop top verde lima con amarre",
     "category": "Blusas",
     "size": "M",
-    "price": 3500,
+    "price": 4000,
     "image": "/images/products/blusas/BLU-042.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -523,7 +523,7 @@ export const products = [
     "name": "Blusa crop roja manga larga con cuello cuadrado",
     "category": "Blusas",
     "size": "S",
-    "price": 3500,
+    "price": 4000,
     "image": "/images/products/blusas/BLU-045.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -545,7 +545,7 @@ export const products = [
     "name": "Crop top rojo con cordón al frente",
     "category": "Blusas",
     "size": "M",
-    "price": 2000,
+    "price": 2500,
     "image": "/images/products/blusas/BLU-047.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -622,7 +622,7 @@ export const products = [
     "name": "Top sin mangas negro cuello alto con recorte",
     "category": "Blusas",
     "size": "S",
-    "price": 1000,
+    "price": 1500,
     "image": "/images/products/blusas/BLU-054.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -655,7 +655,7 @@ export const products = [
     "name": "Crop top negro manga larga cuello alto con recorte",
     "category": "Blusas",
     "size": "S",
-    "price": 1000,
+    "price": 1500,
     "image": "/images/products/blusas/BLU-057.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -677,7 +677,7 @@ export const products = [
     "name": "Top negro con escote cruzado",
     "category": "Blusas",
     "size": "S",
-    "price": 2000,
+    "price": 3000,
     "image": "/images/products/blusas/BLU-059.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
@@ -831,7 +831,7 @@ export const products = [
     "name": "Body de tiritas terciopelo vino con encaje",
     "category": "Bodies",
     "size": "S",
-    "price": 3500,
+    "price": 4000,
     "image": "/images/products/bodies/BOD-001.JPG",
     "available": true,
     "description": "Body de segunda mano en excelente estado."
@@ -864,7 +864,7 @@ export const products = [
     "name": "Body manga larga vino con escote cruzado",
     "category": "Bodies",
     "size": "S",
-    "price": 3500,
+    "price": 4000,
     "image": "/images/products/bodies/BOD-004.JPG",
     "available": true,
     "description": "Body de segunda mano en excelente estado."
@@ -952,7 +952,7 @@ export const products = [
     "name": "Enterizo corto negro manga corta con cordón",
     "category": "Enterizos",
     "size": "M",
-    "price": 3500,
+    "price": 4500,
     "image": "/images/products/enterizos/ENT-001.JPG",
     "available": true,
     "description": "Enterizo de segunda mano en excelente estado."
@@ -974,7 +974,7 @@ export const products = [
     "name": "Romper verde jade con escote cruzado",
     "category": "Enterizos",
     "size": "M",
-    "price": 3500,
+    "price": 4500,
     "image": "/images/products/enterizos/ENT-003.JPG",
     "available": true,
     "description": "Enterizo de segunda mano en excelente estado."
@@ -1007,7 +1007,7 @@ export const products = [
     "name": "Falda de mezclilla azul claro corte A deshilachada",
     "category": "Faldas",
     "size": "M",
-    "price": 2000,
+    "price": 2500,
     "image": "/images/products/faldas/FAL-002.JPG",
     "available": true,
     "description": "Falda de segunda mano en excelente estado."
@@ -1172,7 +1172,7 @@ export const products = [
     "name": "Licra deportiva lila tiro alto",
     "category": "Licras deportivas",
     "size": "Única",
-    "price": 4500,
+    "price": 5000,
     "image": "/images/products/licras-deportivas/LIC-002.JPG",
     "available": true,
     "description": "Licra deportiva de segunda mano en excelente estado."
@@ -1249,7 +1249,7 @@ export const products = [
     "name": "Licra deportiva turquesa tiro alto",
     "category": "Licras deportivas",
     "size": "Única",
-    "price": 4500,
+    "price": 5000,
     "image": "/images/products/licras-deportivas/LIC-009.JPG",
     "available": true,
     "description": "Licra deportiva de segunda mano en excelente estado."
@@ -1304,7 +1304,7 @@ export const products = [
     "name": "Licra deportiva azul claro sin costuras push-up",
     "category": "Licras deportivas",
     "size": "M",
-    "price": 4500,
+    "price": 5000,
     "image": "/images/products/licras-deportivas/LIC-014.JPG",
     "available": true,
     "description": "Licra deportiva de segunda mano en excelente estado."
@@ -1777,7 +1777,7 @@ export const products = [
     "name": "Short deportivo ciclista fucsia tiro alto",
     "category": "Shorts deportivos",
     "size": "M",
-    "price": 2000,
+    "price": 2500,
     "image": "/images/products/shorts-deportivos/SHD-001.JPG",
     "available": true,
     "description": "Short deportivo de segunda mano en excelente estado."
@@ -1788,7 +1788,7 @@ export const products = [
     "name": "Top deportivo ciruela con espalda de tiras cruzadas",
     "category": "Tops deportivos",
     "size": "Única",
-    "price": 1500,
+    "price": 2000,
     "image": "/images/products/tops-deportivos/TOP-001.JPG",
     "available": true,
     "description": "Top deportivo de segunda mano en excelente estado."
@@ -1843,7 +1843,7 @@ export const products = [
     "name": "Vestido largo tejido verde con escote cruzado",
     "category": "Vestidos",
     "size": "M-L",
-    "price": 4000,
+    "price": 5000,
     "image": "/images/products/vestidos/VES-001.jpg",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -1887,7 +1887,7 @@ export const products = [
     "name": "Vestido polo azul marino U.S. Polo Assn.",
     "category": "Vestidos",
     "size": "XS",
-    "price": 3500,
+    "price": 4500,
     "image": "/images/products/vestidos/VES-005.JPG",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -1909,7 +1909,7 @@ export const products = [
     "name": "Vestido blanco y negro estampado cebra con greca",
     "category": "Vestidos",
     "size": "S",
-    "price": 2500,
+    "price": 4500,
     "image": "/images/products/vestidos/VES-007.JPG",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -1931,7 +1931,7 @@ export const products = [
     "name": "Vestido gris con cierre frontal y argolla",
     "category": "Vestidos",
     "size": "S",
-    "price": 3500,
+    "price": 4500,
     "image": "/images/products/vestidos/VES-009.JPG",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -1964,7 +1964,7 @@ export const products = [
     "name": "Vestido overol de mezclilla azul claro con botones",
     "category": "Vestidos",
     "size": "S",
-    "price": 4000,
+    "price": 4500,
     "image": "/images/products/vestidos/VES-012.JPG",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -1986,7 +1986,7 @@ export const products = [
     "name": "Vestido gris jaspeado a rayas manga corta",
     "category": "Vestidos",
     "size": "S",
-    "price": 2000,
+    "price": 3500,
     "image": "/images/products/vestidos/VES-014.JPG",
     "available": true,
     "description": "Vestido de segunda mano en excelente estado."
@@ -2051,7 +2051,7 @@ export const products = [
     "code": "CON-001",
     "name": "Conjunto top y short estampado de mariposas",
     "category": "Conjuntos",
-    "size": "M",
+    "size": "S",
     "price": 1500,
     "image": "/images/products/conjuntos/CON-001.JPG",
     "available": true,
