@@ -1003,7 +1003,10 @@ a {
   width: 100%;
   max-width: 680px;
   max-height: 90vh;
+  max-height: 90dvh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   box-shadow: var(--shadow-lg);
   position: relative;
   display: flex;
@@ -1149,6 +1152,10 @@ a {
   flex-direction: column;
   gap: 10px;
   margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0 2px;
+  background-color: var(--bg-surface);
 }
 
 .btn-detail-add {
