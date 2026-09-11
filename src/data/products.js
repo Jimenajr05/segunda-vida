@@ -701,7 +701,8 @@ export const products = [
     "size": "M",
     "price": 1500,
     "image": "/images/products/blusas/BLU-061.JPG",
-    "available": true,
+    "available": false,
+    "status": "apartado",
     "description": "Blusa de segunda mano en excelente estado."
   },
   {
@@ -965,7 +966,8 @@ export const products = [
     "size": "S",
     "price": 3500,
     "image": "/images/products/enterizos/ENT-002.JPG",
-    "available": true,
+    "available": false,
+    "status": "apartado",
     "description": "Enterizo de segunda mano en excelente estado."
   },
   {
