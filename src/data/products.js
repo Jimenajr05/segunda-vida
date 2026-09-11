@@ -601,7 +601,7 @@ export const products = [
     "category": "Blusas",
     "size": "L",
     "price": 3500,
-    "image": "/images/products/blusas/BLU-052.jpg",
+    "image": "/images/products/blusas/BLU-052.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."
   },
