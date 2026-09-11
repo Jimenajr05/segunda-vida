@@ -11,6 +11,8 @@ export default function ProductCard({
   priority = false
 }) {
   const isAvailable = product.available !== false;
+  const isApartado = !isAvailable && product.status === 'apartado';
+  const statusLabel = isApartado ? 'APARTADO' : 'VENDIDO';
 
   const handleCartClick = (e) => {
     e.stopPropagation();
@@ -47,8 +49,8 @@ export default function ProductCard({
 
         {/* Sold Badge */}
         {!isAvailable && (
-          <div className="card-badge-sold">
-            VENDIDO
+          <div className={`card-badge-sold ${isApartado ? 'card-badge-apartado' : ''}`}>
+            {statusLabel}
           </div>
         )}
       </div>
@@ -91,9 +93,9 @@ export default function ProductCard({
           <button
             className="btn-add-cart"
             disabled
-            aria-label="Prenda vendida"
+            aria-label={isApartado ? 'Prenda apartada' : 'Prenda vendida'}
           >
-            <span>Vendido</span>
+            <span>{isApartado ? 'Apartado' : 'Vendido'}</span>
           </button>
         )}
       </div>

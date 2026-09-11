@@ -753,6 +753,10 @@ a {
   z-index: 3;
 }
 
+.card-badge-apartado {
+  background-color: rgba(196, 151, 116, 0.9);
+}
+
 /* Card Details Info */
 .product-info {
   padding: 10px 10px 12px;

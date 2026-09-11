@@ -13,6 +13,8 @@ export default function ProductDetailModal({
   if (!product) return null;
 
   const isAvailable = product.available !== false;
+  const isApartado = !isAvailable && product.status === 'apartado';
+  const statusLabel = isApartado ? 'APARTADO' : 'VENDIDO';
   const whatsAppUrl = generateSingleProductWhatsAppUrl(product);
 
   return (
@@ -32,8 +34,8 @@ export default function ProductDetailModal({
               className="product-img"
             />
             {!isAvailable && (
-              <div className="card-badge-sold" style={{ fontSize: '0.9rem', padding: '8px 0' }}>
-                VENDIDO
+              <div className={`card-badge-sold ${isApartado ? 'card-badge-apartado' : ''}`} style={{ fontSize: '0.9rem', padding: '8px 0' }}>
+                {statusLabel}
               </div>
             )}
           </div>
@@ -61,8 +63,11 @@ export default function ProductDetailModal({
                 </div>
                 <div className="spec-item">
                   <span className="spec-label">Disponibilidad</span>
-                  <span className="spec-value" style={{ color: '#1E7E34', fontWeight: 600 }}>
-                    Disponible
+                  <span
+                    className="spec-value"
+                    style={{ color: isAvailable ? '#1E7E34' : '#B23B3B', fontWeight: 600 }}
+                  >
+                    {isAvailable ? 'Disponible' : statusLabel === 'APARTADO' ? 'Apartado' : 'Vendido'}
                   </span>
                 </div>
                 <div className="spec-item">
@@ -98,7 +103,7 @@ export default function ProductDetailModal({
                 </button>
               ) : (
                 <button className="btn-detail-add" disabled>
-                  <span>Prenda Vendida</span>
+                  <span>{isApartado ? 'Prenda Apartada' : 'Prenda Vendida'}</span>
                 </button>
               )}
 

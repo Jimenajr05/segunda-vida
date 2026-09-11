@@ -1097,7 +1097,7 @@ export const products = [
     "size": "M",
     "price": 2500,
     "image": "/images/products/faldas/FAL-010.JPG",
-    "available": true,
+    "available": false,
     "description": "Falda de segunda mano en excelente estado."
   },
   {
@@ -2054,7 +2054,8 @@ export const products = [
     "size": "S",
     "price": 1500,
     "image": "/images/products/conjuntos/CON-001.JPG",
-    "available": true,
+    "available": false,
+    "status": "apartado",
     "description": "Conjunto de segunda mano en excelente estado."
   }
 ];
