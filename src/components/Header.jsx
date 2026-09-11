@@ -131,9 +131,15 @@ export default function Header({
 
             <div className="info-panel-note">
               <Truck size={15} className="info-panel-note-icon" />
-              <p>
-                <strong>Envío y pago:</strong> a todo Costa Rica por Correos de CR o mensajería. Pago con SINPE Móvil o transferencia al coordinar por WhatsApp.
-              </p>
+              <div>
+                <p><strong>Envío y pago:</strong></p>
+                <ul className="info-panel-list">
+                  <li>Correos de Costa Rica o mensajería</li>
+                  <li>Envío por Uber</li>
+                  <li>Recoger en Ciudad Quesada, Cedral, Calle San Lucas</li>
+                  <li>Pago con SINPE Móvil o transferencia al coordinar por WhatsApp</li>
+                </ul>
+              </div>
             </div>
           </div>
         </>

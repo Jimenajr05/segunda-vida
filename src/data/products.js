@@ -226,7 +226,7 @@ export const products = [
     "name": "Blusa de encaje negro manga larga con brillos",
     "category": "Blusas",
     "size": "S",
-    "price": 2000,
+    "price": 3000,
     "image": "/images/products/blusas/BLU-018.JPG",
     "available": true,
     "description": "Blusa de segunda mano en excelente estado."

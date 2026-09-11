@@ -1305,6 +1305,30 @@ a {
   color: var(--text-main);
 }
 
+.info-panel-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-panel-list li {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.info-panel-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+}
+
 .cart-header {
   padding: 16px 20px;
   border-bottom: 1px solid var(--border-light);
