@@ -1,0 +1,323 @@
+/* ==========================================================================
+   PANEL DE ADMINISTRACIÓN — usa la misma paleta que el catálogo (index.css)
+   ========================================================================== */
+
+.admin-page {
+  min-height: 100vh;
+  background: var(--bg-main);
+  padding: 20px 16px 56px;
+}
+
+.admin-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-brand-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  background: var(--accent-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.admin-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.admin-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.admin-logout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.admin-logout:hover {
+  background: var(--bg-subtle);
+}
+
+.admin-loading {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* Login card */
+.admin-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-login-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.admin-error {
+  color: var(--color-danger);
+  background: var(--color-danger-light);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  margin-top: 10px;
+}
+
+.admin-btn-primary {
+  margin-top: 18px;
+  width: 100%;
+  padding: 13px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--accent-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.admin-btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.admin-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Search */
+.admin-search-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.admin-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.admin-search-input {
+  width: 100%;
+  padding: 12px 14px 12px 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.92rem;
+}
+
+.admin-search-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
+.admin-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  padding-left: 2px;
+}
+
+/* Product list */
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-row {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--border-light);
+}
+
+.admin-row-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.admin-row-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-subtle);
+}
+
+.admin-row-heading {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.admin-row-code {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent-hover);
+}
+
+.admin-row-name {
+  font-size: 0.82rem;
+  color: var(--text-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-status-pill {
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.admin-status-disponible {
+  background: #E7F5EC;
+  color: #1F8A4C;
+}
+
+.admin-status-apartado {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.admin-status-vendido {
+  background: var(--color-sold-bg);
+  color: var(--color-sold);
+}
+
+.admin-field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.admin-field-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-size: 0.92rem;
+  font-family: var(--font-sans);
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
+.admin-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23726A63' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.admin-btn-save {
+  margin-top: 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.admin-btn-save:hover:not(:disabled) {
+  background: #000;
+}
+
+.admin-btn-save:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.admin-btn-saved {
+  background: #1F8A4C;
+}
+
+.admin-spin {
+  animation: admin-spin 0.8s linear infinite;
+}
+
+@keyframes admin-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

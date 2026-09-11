@@ -8,7 +8,7 @@ import ProductDetailModal from './components/ProductDetailModal';
 import CartDrawer from './components/CartDrawer';
 import Pagination from './components/Pagination';
 import Toast from './components/Toast';
-import { products as initialProducts } from './data/products';
+import { useProducts } from './utils/useProducts';
 import { PRICE_RANGES } from './data/categories';
 
 const getItemsPerPage = () =>
@@ -16,6 +16,9 @@ const getItemsPerPage = () =>
 const CART_STORAGE_KEY = 'segunda_vida_cart_v1';
 
 export default function App() {
+  // Catálogo de productos (vive en Supabase; se edita desde /admin)
+  const { products: initialProducts } = useProducts();
+
   // Estado del Carrito (con persistencia en localStorage)
   const [cart, setCart] = useState(() => {
     try {
@@ -154,7 +157,7 @@ export default function App() {
 
       return true;
     });
-  }, [searchQuery, selectedCategory, selectedSize, selectedPriceRange]);
+  }, [initialProducts, searchQuery, selectedCategory, selectedSize, selectedPriceRange]);
 
   // Cálculo de Paginación (Máximo 10 productos por página)
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);

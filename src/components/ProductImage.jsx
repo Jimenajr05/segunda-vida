@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Image as ImageIcon } from 'lucide-react';
+import { withBase } from '../utils/withBase';
 
 /**
  * Componente de imagen con soporte para placeholders automáticos.
@@ -28,7 +29,7 @@ export default function ProductImage({ src, alt, className = '', containerClassN
         </div>
       )}
       <img
-        src={src}
+        src={withBase(src)}
         alt={alt || "Prenda de ropa"}
         className={`${className} ${loaded ? 'opacity-100' : 'opacity-0'}`}
         onLoad={() => setLoaded(true)}
