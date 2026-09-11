@@ -7,7 +7,8 @@ import './admin.css';
 /**
  * Panel privado para editar precio, talla y disponibilidad de cada prenda
  * desde el celular. Requiere login (creado a mano en Supabase Auth).
- * Ruta: /admin
+ * Usa el mismo encabezado y estilo visual que la tienda pública, para que
+ * se sienta parte del mismo sitio. Ruta: /admin
  */
 export default function Admin() {
   const [session, setSession] = useState(null);
@@ -26,23 +27,32 @@ export default function Admin() {
 
   return (
     <div className="admin-page">
-      <div className="admin-container">
-        <header className="admin-header">
-          <div className="admin-brand">
-            <span className="admin-brand-mark">SV</span>
-            <div>
-              <h1 className="admin-title">Panel Segunda Vida</h1>
-              <p className="admin-subtitle">Precio · talla · disponibilidad</p>
+      {/* Encabezado idéntico al de la tienda, para ubicarse al instante */}
+      <header className="header-wrapper">
+        <div className="container">
+          <div className="header-inner">
+            <div className="header-spacer" />
+            <div className="header-brand">
+              <span className="brand-title">SEGUNDA VIDA</span>
+              <span className="brand-subtitle">Panel privado</span>
             </div>
+            {session && (
+              <div className="header-actions">
+                <button
+                  className="icon-btn"
+                  onClick={() => supabase.auth.signOut()}
+                  aria-label="Cerrar sesión"
+                  title="Cerrar sesión"
+                >
+                  <LogOut size={20} />
+                </button>
+              </div>
+            )}
           </div>
-          {session && (
-            <button onClick={() => supabase.auth.signOut()} className="admin-logout">
-              <LogOut size={15} strokeWidth={2.2} />
-              Salir
-            </button>
-          )}
-        </header>
+        </div>
+      </header>
 
+      <main className="container admin-container">
         {checkingSession ? (
           <p className="admin-loading">Cargando...</p>
         ) : session ? (
@@ -50,7 +60,7 @@ export default function Admin() {
         ) : (
           <LoginForm />
         )}
-      </div>
+      </main>
     </div>
   );
 }
